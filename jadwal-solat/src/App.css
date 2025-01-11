@@ -1,0 +1,118 @@
+/* Reset basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #FCFAEE; /* Warna latar belakang utama */
+  color: #333;
+  height: 100vh; /* Pastikan body mengambil tinggi penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}W
+
+/* Center content */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ECDFCC; /* Warna background container */
+}
+
+/* Styling for the clock */
+.clock {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #DA8359; /* Warna untuk jam */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input styling */
+input[type="text"] {
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #333;
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #A5B68D; /* Warna border input */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Fokus pada input */
+input[type="text"]:focus {
+  border-color: #DA8359; /* Warna border saat fokus */
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  background-color: #DA8359; /* Warna tombol */
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #A5B68D; /* Warna tombol saat hover */
+  transform: scale(1.05);
+}
+/* Styling untuk dropdown list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Membuat elemen dalam list dapat dibungkus ke baris berikutnya */
+  gap: 10px; /* Jarak antar item */
+  transition: max-height 0.3s ease-out;
+}
+
+/* Styling untuk setiap list item */
+ul li {
+  flex: 1 1 calc(33.33% - 10px); /* Membuat 3 kolom dengan jarak antar item */
+  padding: 12px 20px;
+  border-bottom: 1px solid #A5B68D;
+  background-color: #FCFAEE;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  box-sizing: border-box; /* Agar padding tidak membuat elemen lebih lebar */
+}
+
+/* Hover Effect pada list item */
+ul li:hover {
+  background-color: #A5B68D;
+  color: #fff;
+  transform: translateX(10px);
+}
+
+/* Hilangkan border pada item terakhir */
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Styling untuk teks dalam list item */
+ul li span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Loading text */
+p {
+  color: #DA8359;
+  font-size: 1rem;
+  margin-top: 5px;
+  font-style: italic;
+}
