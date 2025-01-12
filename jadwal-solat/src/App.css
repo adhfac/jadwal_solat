@@ -12,17 +12,28 @@ body {
   text-align: center;
 }W
 
-/* Center content */
+/* Styling untuk container */
 .container {
-  width: 100%;
+  width: 90%; /* Lebih fleksibel untuk layar kecil */
   max-width: 600px;
-  padding: 20px;
+  padding: 20px 15px; /* Padding yang lebih proporsional */
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow lebih lembut */
   text-align: center;
   background-color: #ECDFCC; /* Warna background container */
+  margin: auto; /* Pusatkan pada layar */
+  box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran */
 }
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px; /* Kurangi padding pada layar kecil */
+    border-radius: 8px; /* Kurangi radius agar lebih ramping */
+  }
+}
+
 
 /* Styling for the clock */
 .clock {
