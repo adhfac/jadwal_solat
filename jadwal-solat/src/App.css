@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }W
 
 /* Center content */
@@ -76,7 +77,6 @@ ul {
   display: flex;
   flex-wrap: wrap; /* Membuat elemen dalam list dapat dibungkus ke baris berikutnya */
   gap: 10px; /* Jarak antar item */
-  transition: max-height 0.3s ease-out;
 }
 
 /* Styling untuk setiap list item */

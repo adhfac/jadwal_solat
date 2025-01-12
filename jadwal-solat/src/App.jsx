@@ -15,7 +15,6 @@ function App() {
     <div className="container">
       <Clock />
       <SearchCity onSearch={handleSearch} />
-      
       <PrayerTimes city={city} />
     </div>
   );
